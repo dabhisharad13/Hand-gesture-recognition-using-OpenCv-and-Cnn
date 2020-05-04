@@ -4,8 +4,6 @@ The dataset used is basically 7 hand gestures
 
 0: Fist, 1: Five, 2: None, 3: Okay, 4: Peace, 5: Rad, 6: Straight, 7: Thumbs
 
-
-
 # How to run
 1. Firstly run the Cnn file to generate the model 
 2. Use the generated model in the Hand-gesture-OpenCv.py
@@ -14,3 +12,10 @@ The dataset used is basically 7 hand gestures
 
 # Note:
 I have used contours to detect the hand segment. When the program is calcualting the background make sure that the background is plain and does not consist any edges or corners else it will take them into consideration. Once the background is calculated don't move the webcam else the background will get distorted. Make sure you have proper light coming at your hand will doing the gestures since contours require light to detect proper boundary.
+
+# Data-set
+The training set consist of 7999 images belonging to 8 classes and test set consist of 4000 images belonging to 8 classes.
+
+Epoch 1/1
+7999/7999 [==============================] - 551s 69ms/step - loss: 0.0401 - accuracy: 0.9869 - val_loss: 2.0493 - val_accuracy: 0.9762
+
